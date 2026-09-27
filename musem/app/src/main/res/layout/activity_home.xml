@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HomeActivity">
+
+    <!-- Title TextView at the top -->
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wales"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/explore"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/explore_museums"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topText"
+        app:layout_constraintBottom_toTopOf="@id/map"
+        android:layout_marginTop="32dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/map"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/map"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/explore"
+        app:layout_constraintBottom_toTopOf="@id/itinerary"
+        android:layout_marginTop="16dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/itinerary"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="@string/itinerary"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

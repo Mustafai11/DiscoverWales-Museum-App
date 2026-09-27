@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">musem</string>
+    <string name="start">START</string>
+    <string name="wales">Discover Wales</string>
+    <string name="itinerary">Itinerary</string>
+    <string name="map">Map</string>
+    <string name="save">Save</string>
+    <string name="explore_museums">Explore Museums</string>
+    <string name="google_maps_key">AIzaSyBNtCCXnMEv1by1Mn49cQnesErxNteyzvM</string>
+    <string name="image">image</string>
+</resources>
